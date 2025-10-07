@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*
+fiction_shop
+support_mobile
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*===[privacy.php]===*/
+.privacy-section-sub {
+  margin: 5% auto 0;
+  line-height: 2;
+}
+
+.privacy-container {
+  margin: auto;
+  width: 85%;
+  counter-reset: number 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+#privacy-inner-head {
+  line-height: 2;
+}
+
+.privacy-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+  padding: 0% 1%;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+.privacy-heading::before {
+  counter-increment: number 1;
+  content: counter(number) ".";
+  font-weight: bold;
+}
+
+.privacy-content {
+  margin: 1% 0%;
+  padding: 0% 1%;
+  line-height: 2;
+}
+
+.privacy-content-inner {
+  padding: 2% 0;
+  line-height: 2;
+}
+
+.privacy-content-inner {
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  line-height: 2;
+}
+
+.privacy-list {
+  position: relative;
+  padding: 0% 6%;
+  list-style: inside;
+  line-height: 2;
+  text-indent: -1.4rem;
+}
+.privacy-list::before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 40%;
+  display: inline-block;
+  color: #ffffff;
+}
+
+#privacy-content-end {
+  text-align: right;
+  margin: 10% 3%;
+}
+
+.privacy-container-foot {
+  margin: 0% auto;
+  width: 90%;
+  counter-reset: number 0;
+  line-height: 2;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*===[labels.php]===*/
+#labels-container {
+  margin: auto;
+  padding: 15% 5%;
+  width: 90%;
+  counter-reset: number 0;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.labels-list {
+  display: inline-table;
+  margin: 1% auto;
+  width: 100%;
+  text-align: left;
+  border-bottom: 0.1rem solid #8f8f8f;
+}
+
+.labels-item {
+  padding: 2%;
+  width: 30%;
+}
+
+.labels-content {
+  padding: 2%;
+  line-height: 1.6;
+}
+
+.labels-content-detail li {
+  line-height: 1.6;
+}
+
+.labels-caution {
+  margin: 1% 0%;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*=================
+[order_manage.php]
+[order_result.php]
+[order_thank.php]
+共通
+===================*/
+.order-container {
+  margin: auto;
+  padding: 1%;
+  height: 80vh;
+  width: 100%;
+}
+
+.order-form-outer {
+  margin: 0 auto;
+  height: 60vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.order-form {
+  display: flex;
+  align-items: center;
+  margin: 5% auto 0;
+  width: 95%;
+  text-align: left;
+  border-radius: 0.3rem;
+  background-color: #eeeeee;
+}
+
+.order-form-img-outer {
+  padding: 1%;
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.order-img {
+  height: 100%;
+}
+
+.order-form-lead-outer {
+  margin-left: 1%;
+  padding: 2% 1%;
+  width: 60%;
+}
+
+.order-form-lead {
+  display: block;
+  padding: 0 1%;
+  font-size: 1rem;
+}
+
+.order-form-list {
+  padding: 0.5% 0;
+}
+
+.order-form-item {
+  padding-left: 5%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.order-form-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+#no-result {
+  margin: 10% auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*===[order_manage.php]===*/
+#order-search-form {
+  display: flex;
+  align-items: center;
+  margin: 5% auto;
+  padding: 2%;
+  width: 95%;
+  background-color: #ffffff;
+}
+
+#search-list-outer {
+  padding: 2%;
+  width: 80%;
+}
+
+.search-list {
+  padding: 1% 0;
+  width: 100%;
+}
+
+.search-list-head {
+  text-align: left;
+  font-weight: bold;
+}
+
+.search-item {
+  margin-left: 5%;
+  padding: 2%;
+  width: 100%;
+  text-align: left;
+  border-radius: 0.2rem;
+  border: 0.1rem solid #000000;
+}
+
+.search-item option {
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.search-btn-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 15%;
+}
+
+.search-btn-txt {
+  display: none;
+}
+
+.order-search-icon {
+  width: 100%;
+}
+
+/*注文管理*/
+.order-state-outer {
+  display: block;
+  text-align: center;
+}
+
+.state-disp {
+  font-size: 1.2rem;
+}
+
+.order-state-cont {
+  text-align: center;
+}
+
+.state-manage-item {
+  font-weight: bold;
+}
+
+.action-date,
+.order-manage-state {
+  margin: 10% auto;
+  padding: 5% 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  border: 0.1rem solid #000000;
+}
+
+.order-manage-state option {
+  font-size: 1.4rem;
+}
+
+.order-edit-btn-area {
+  margin-top: 5%;
+}
+
+#delete-order-btn {
+  margin: 5% auto 0;
+}
+
+/*===[order_result.php]===*/
+.order-result-price-outer {
+  display: flex;
+  align-items: center;
+}
+
+.order-result-price-tax {
+  padding-left: 0.5%;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.order-result-state-outer {
+  display: block;
+  text-align: center;
+}
+
+.order-result-state-date {
+  display: block;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.order-result-state {
+  padding-top: 5%;
+  font-size: 1.2rem;
+}
+
+#order-result-return-outer {
+  margin: auto;
+  padding-top: 10%;
+  width: 80%;
+}
+
+/*===[order_thank.php]===*/
+.thank-err {
+  padding: 1% 0%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#order-nav {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  animation: nav_flash 1.5s linear infinite;
+}
+@keyframes nav_flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#top-btn-area {
+  padding: 5%;
+  text-align: center;
+}
+
+#thank-return-btn {
+  letter-spacing: 0.2rem;
+}

@@ -1,0 +1,600 @@
+@charset "UTF-8";
+/*
+fiction_shop
+account_middle
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*===[login.php]===*/
+#login-form {
+  margin: 10% auto;
+  padding: 5%;
+  width: 80%;
+  border-radius: 2rem;
+  border: 0.1rem dotted #ffffff;
+}
+
+.login-list {
+  position: relative;
+  margin: 10% auto 3%;
+  width: 80%;
+}
+
+.login-id-label,
+.login-pass-label {
+  position: absolute;
+  top: -60%;
+  padding: 2%;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+}
+
+#login-id,
+#login-pass {
+  padding: 4% 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#login-id.err,
+#login-pass.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+/*エラーメッセージ*/
+.err-login_id,
+.err-login_pass {
+  margin-left: 5%;
+  color: #ff0000;
+}
+
+#login-check-area {
+  padding-top: 5%;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*チェックボックス*/
+#login-checkbox {
+  opacity: 0;
+}
+#login-checkbox:checked + #login-checklabel::after {
+  opacity: 1;
+}
+
+#login-checklabel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#login-checklabel::before {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  content: "";
+  display: block;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+}
+#login-checklabel::after {
+  position: absolute;
+  opacity: 0;
+  top: -15%;
+  left: 31%;
+  content: "";
+  display: block;
+  height: 1.2rem;
+  width: 0.8rem;
+  border-right: 0.2rem solid #00c257;
+  border-bottom: 0.1rem solid #00c257;
+  transform: rotate(45deg);
+}
+
+#login-submit-area {
+  position: relative;
+  padding-top: 10%;
+}
+
+#login-err {
+  position: absolute;
+  bottom: 60%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#to-signup-area {
+  margin: auto;
+  padding: 10% 0;
+  width: 70%;
+  text-align: center;
+}
+
+#to-signup-nav {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+#login-return-btn-outer {
+  margin: auto;
+  width: 80%;
+}
+
+/*[新規登録フォーム]*/
+#signup-ol {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  z-index: 10;
+  display: none;
+  height: 100%;
+  width: 80%;
+  background-color: #000000e6;
+}
+
+#signup-title {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#signup-form-outer {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  overflow-y: scroll;
+  margin: auto;
+  padding: 0 2%;
+  height: 70%;
+  width: 90%;
+  border-radius: 2rem;
+  border: 0.1rem dotted #ffffff;
+}
+
+#signup-form {
+  padding: 5%;
+  width: 100%;
+  text-align: left;
+}
+
+.input-area {
+  width: 100%;
+}
+
+.input-list {
+  margin-top: 2.5%;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.required-icon {
+  padding-left: 2%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.input-item {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.item-outer {
+  padding: 2% 0;
+  width: 100%;
+}
+
+.item-label {
+  padding-left: 2%;
+  color: #ffffff;
+}
+
+.input-case-s {
+  padding: 3% 0%;
+  width: 100%;
+  border: 0.15rem solid #000000;
+}
+.input-case-s.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+
+.input-case-m {
+  padding: 3% 0%;
+  width: 100%;
+  border: 0.15rem solid #000000;
+}
+.input-case-m.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+
+.input-case-l {
+  padding: 3% 0%;
+  width: 100%;
+  border: 0.15rem solid #000000;
+}
+.input-case-l.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+
+#prefectures {
+  display: block;
+  padding: 3.2% 0;
+  resize: none;
+  border: 0.15rem solid #000000;
+}
+
+#check-submit-area {
+  margin: auto;
+  padding: 10% 0;
+  width: 100%;
+  text-align: center;
+}
+
+#signup-return-btn {
+  margin-bottom: 10%;
+}
+
+#signup-err-outer {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#signup-err {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#signup-return-outer {
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  width: 20%;
+  text-align: center;
+}
+
+/*エラーメッセージ*/
+.err-first_name,
+.err-last_name,
+.err-post_code,
+.err-prefectures,
+.err-address_1,
+.err-address_2,
+.err-tel_num,
+.err-contact_txt,
+.err-mail_ad,
+.err-password {
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+#prefectures.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+#contact_txt.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+#signup_pass.err {
+  border: #ff0000 solid 0.2rem;
+  background-color: #e9967a;
+}
+
+/*===[signup_check.php]===*/
+#signup-result-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+}
+
+#signup-result-title-outer {
+  margin: auto;
+  padding: 10%;
+  display: block;
+  width: 90%;
+  text-align: center;
+}
+
+#signup-result-title {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#signup-result-outer {
+  margin: auto;
+  padding: 5%;
+  width: 90%;
+  border-radius: 2rem;
+  border: 0.1rem dotted #ffffff;
+}
+
+.signup-result-list {
+  margin: 2% auto;
+  color: #ffffff;
+}
+
+.signup-result-label {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.signup-result-item {
+  display: flex;
+  padding: 2%;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#signup-result-txt-outer {
+  margin: 2% auto;
+  width: 100%;
+  text-align: center;
+}
+
+#signup-result-txt {
+  padding-top: 10%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#signup-return-nav-outer {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+/*===[mycart.php]===*/
+#cart-container {
+  margin: 0% auto;
+  padding: 2%;
+  min-height: 35vh;
+  width: 100%;
+}
+
+.cart-form {
+  display: flex;
+  margin: 5% auto;
+  padding: 2%;
+  width: 90%;
+  text-align: left;
+  border-radius: 0.3rem;
+  background-color: #eeeeee;
+}
+
+.cart-img-box {
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.cart-item-lead {
+  display: block;
+  padding: 0.5% 5%;
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+.cart-item-name-outer {
+  width: 100%;
+  border-bottom: 0.1rem solid #8f8f8f;
+}
+
+.cart-item-name {
+  text-align: right;
+  width: 100%;
+  border-bottom: 0.1rem solid #8f8f8f;
+}
+
+.cart-item-price-outer {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  padding: 5% 0;
+  width: 100%;
+}
+
+.cart-item-price {
+  padding: 0% 1%;
+  font-weight: bold;
+}
+
+.cart-item-tax {
+  padding: 0 1%;
+  font-size: 0.8rem;
+}
+
+.cart-item-amount-outer {
+  display: flex;
+  justify-content: l;
+  align-items: baseline;
+}
+
+.cart-item-amount {
+  margin: 0 3%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cart-err {
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.cart-btn-area {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.delete-cart-btn {
+  display: block;
+  margin: auto;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  color: #000000;
+  border-radius: 0.3rem;
+  border: 0.2rem solid #000000;
+  background-color: #dcdcdc;
+}
+
+.delete-cart-txt {
+  display: none;
+}
+
+.delete-cart-icon {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#total-price-container {
+  margin: 5% auto;
+  width: 90%;
+  text-align: right;
+  color: #ffffff;
+}
+
+#total-price-outer {
+  padding-right: 1%;
+  color: #ffffff;
+}
+
+#total-price {
+  display: inline;
+}
+
+#delivery-price-outer {
+  padding-right: 1%;
+  color: #ffffff;
+  border-bottom: 0.1rem solid #8f8f8f;
+}
+
+#delivery-price {
+  display: inline;
+}
+
+#all-total-price-outer {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  padding-top: 2%;
+  padding-right: 1%;
+}
+
+#all-total-price {
+  padding: 0 2%;
+}
+
+#destination-outer {
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 5%;
+  width: 90%;
+  border: 0.2rem dotted #ffffff;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+#destination-list {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.destination-item {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  padding-top: 1%;
+  width: 100%;
+}
+
+.destination-item-child {
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  padding-left: 2%;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+#delivery-list {
+  padding-top: 7%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#delivery-item {
+  width: 100%;
+}
+
+#delivery-item-child {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#order-lead {
+  padding: 10% 7%;
+  text-align: center;
+  color: #ffffff;
+}
+
+#order-btn-area {
+  margin: auto;
+  width: 80%;
+}
+
+#order-submit {
+  margin-top: 10%;
+}
+
+#no-cart {
+  padding-top: 15%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#mycart-return-btn-outer {
+  margin: auto;
+  padding-top: 30%;
+  width: 80%;
+}

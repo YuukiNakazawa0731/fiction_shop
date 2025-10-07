@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/*
+fiction_shop
+products_middle
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*===[all.php]===*/
+#all-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+
+#all-list-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.item-form {
+  position: relative;
+  display: inline-block;
+  margin: 3% 2%;
+  padding: 2%;
+  width: 46%;
+  background-color: #eeeeee;
+}
+
+.item-img-box {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  display: inline-block;
+  margin: 0% auto;
+  height: 15rem;
+  width: 15rem;
+}
+
+.item-img {
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.item-lead {
+  margin: 2% auto;
+  width: 90%;
+}
+
+.item-name {
+  padding: 3% 2%;
+  font-weight: bold;
+  border-bottom: 0.05rem solid #494949;
+}
+
+.item-txt {
+  padding: 3% 2%;
+  height: 10rem;
+  padding-left: 2%;
+  text-align: left;
+}
+
+.item-foot {
+  position: relative;
+  margin: auto;
+  padding: 3% 5%;
+}
+
+.stock-nav {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  width: 60%;
+  text-align: left;
+  color: #ff0000;
+}
+
+.item-price {
+  margin: auto;
+  padding: 3% 5%;
+}
+
+.item-price-child {
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.item-price-before {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.price-tax {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.amount-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.amount-txt {
+  padding: 1.5% 0;
+}
+
+.spinner-plus,
+.spinner-minus {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  padding: 2% 0 2.5% 1%;
+  width: 26%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.3rem;
+  background: #808080;
+  color: #ffffff;
+}
+
+.amount {
+  margin: auto;
+  padding: 3.5% 7% 3.5% 0;
+  width: 40%;
+  text-align: center;
+  font-size: 1.6rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.amount-nav-outer {
+  padding: 2%;
+  text-align: center;
+}
+
+.err-amount {
+  font-weight: bold;
+  color: red;
+}
+
+.cart-btn-outer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.in-cart {
+  margin: auto;
+  padding: 3% 0;
+  width: 80%;
+  text-align: center;
+  text-indent: 0;
+  font-size: 1.6rem;
+  border: 0.3rem double #000000;
+  border-radius: 0.3rem;
+  background-color: #00c257;
+}
+
+.sold-out {
+  margin: 22% 0% 2%;
+  padding: 1% 0%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.soldout-wrapper {
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*================
+[item_edit.php]
+[item_manage.php]
+[item_signup.php]
+共通
+================*/
+.edit-container {
+  margin: auto;
+  padding: 2%;
+  height: 100vh;
+  width: 100%;
+}
+
+/*scroll outer*/
+.edit-form-outer-scroll {
+  position: absolute;
+  left: 10%;
+  overflow-y: scroll;
+  margin: auto;
+  height: 70vh;
+  width: 80%;
+  border: 0.2rem solid #ffffff;
+  background-color: #646464;
+}
+
+.edit-form-outer {
+  position: relative;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.edit-form {
+  margin: 5% auto 0;
+  padding: 5% 2%;
+  width: 98%;
+  text-align: left;
+  border-radius: 0.3rem;
+  background-color: #eeeeee;
+}
+
+.edit-img-outer {
+  position: relative;
+  margin: auto;
+  height: 15rem;
+  width: 15rem;
+  border: solid 0.2rem #000000;
+}
+
+.edit-img {
+  margin: auto;
+  height: 100%;
+}
+
+.img-name {
+  position: absolute;
+  bottom: -20%;
+  left: 5%;
+  width: 82%;
+}
+
+.edit-item-lead {
+  padding: 1% 0;
+  width: 100%;
+}
+
+.edit-item-item {
+  font-size: 1.4rem;
+}
+
+.item-edit-btn-outer {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+#item-edit-btn,
+#item-edit-delete-btn {
+  margin: 10% auto;
+}
+
+/*===[item_manage.php]===*/
+.edit-item-lead-outer {
+  display: block;
+  margin-top: 15%;
+  padding: 0.5%;
+  width: 100%;
+}
+
+.input-edit {
+  padding: 2% 1%;
+  width: 100%;
+  font-size: 1.6rem;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+}
+
+.input-edit-txt {
+  padding: 0.5% 2%;
+  width: 100%;
+  font-size: 1.6rem;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+}
+
+#item-signup-btn-outer {
+  margin: auto;
+  width: 50%;
+}
+
+/*===[item_signup.php]===*/
+#signup-img-box {
+  position: absolute;
+  height: 14.6rem;
+  width: 14.6rem;
+}
+
+.edit-signup-btn-outer {
+  margin: 10% auto 0;
+  text-align: center;
+  width: 40%;
+}
+#signup-btn-submit,
+#signup-btn-return {
+  margin: 10% auto;
+}
+
+/*===[item_edit.php]===*/
+#edit-result-lead-outer {
+  display: block;
+  margin-top: 15%;
+  padding: 0.5%;
+  width: 100%;
+  text-align: center;
+}
+
+#edit-result-outer {
+  margin: 10% auto;
+  text-align: center;
+  width: 70%;
+}
+
+.edit-result-lead-outer {
+  margin: auto;
+  width: 80%;
+}
+
+.edit-result-item {
+  padding: 1% 3%;
+  font-size: 1.2rem;
+}
+
+#safe-result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#err-result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#edit-return-btn-outer {
+  margin: auto;
+  width: 80%;
+}

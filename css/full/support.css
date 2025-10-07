@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*
+fiction_shop
+support
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*===[privacy.php]===*/
+.privacy-section-sub {
+  margin: 3% 0;
+  padding: 0 15%;
+  line-height: 2;
+}
+
+.privacy-container {
+  margin: 0 auto;
+  width: 70%;
+  counter-reset: number 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+#privacy-inner-head {
+  line-height: 2;
+}
+
+.privacy-heading {
+  display: flex;
+  align-items: center;
+  padding: 5% 1% 0;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+.privacy-heading::before {
+  counter-increment: number 1;
+  content: counter(number) ".";
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.privacy-content {
+  padding: 1% 1%;
+  line-height: 2;
+}
+
+.privacy-content-inner {
+  padding: 2% 0;
+  line-height: 2;
+}
+
+.privacy-list {
+  position: relative;
+  padding: 0 1.2%;
+  line-height: 2;
+  font-weight: normal;
+}
+.privacy-list:before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 0.3%;
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+#privacy-content-end {
+  padding-top: 10%;
+  text-align: right;
+}
+
+.privacy-container-foot {
+  margin: 0 auto;
+  width: 50%;
+  counter-reset: number 0;
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/*===[labels.php]===*/
+#labels-container {
+  margin: auto;
+  padding: 5%;
+  width: 50%;
+  counter-reset: number 0;
+  color: #ffffff;
+}
+
+.labels-list {
+  display: inline-table;
+  margin: 1% auto;
+  width: 100%;
+  text-align: left;
+  border-bottom: 0.1rem solid #8f8f8f;
+}
+
+.labels-item {
+  padding: 2%;
+  width: 30%;
+}
+
+.labels-content {
+  padding: 2%;
+  line-height: 2;
+}
+
+.labels-caution {
+  margin: 1% 0;
+  padding-left: 1.6rem;
+  text-indent: -1.6rem;
+  color: #ff0000;
+}
+
+/*=================
+[order_manage.php]
+[order_result.php]
+[order_thank.php]
+共通
+===================*/
+.order-container {
+  margin: auto;
+  padding: 2%;
+  height: 80vh;
+  width: 90%;
+}
+
+.order-form-outer {
+  margin: 0 auto;
+  height: 60vh;
+  width: 70%;
+  overflow-y: scroll;
+}
+
+.order-form {
+  display: flex;
+  align-items: center;
+  margin: 5% auto 0;
+  padding: 2%;
+  width: 80%;
+  text-align: left;
+  border-radius: 0.3rem;
+  background-color: #eeeeee;
+}
+
+.order-form-img-outer {
+  position: relative;
+  margin: auto;
+  height: 15rem;
+  width: 15rem;
+  border: solid 0.2rem #000000;
+}
+
+.order-img {
+  height: 100%;
+}
+
+.order-form-lead-outer {
+  padding-left: 5%;
+  width: 50%;
+}
+
+.order-form-lead {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.order-form-list {
+  padding: 0.5% 0;
+  width: 20%;
+}
+
+.order-form-item {
+  padding-left: 5%;
+  width: 60%;
+}
+
+.order-form-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+#no-result {
+  margin: 10% auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*===[order_manage.php]===*/
+#order-search-form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 5%;
+  padding: 2%;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+#search-list-outer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.search-list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 1% auto;
+  width: 50%;
+}
+
+.search-list-head {
+  width: 15%;
+}
+
+.search-item {
+  padding: 2% 2%;
+  width: 60%;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.search-item option {
+  margin-left: 5%;
+  padding: 2%;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.search-btn-outer {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.order-search-icon {
+  display: none;
+}
+
+/*注文管理*/
+.order-state-outer {
+  width: 70%;
+  text-align: center;
+}
+
+.state-date-disp {
+  width: 100%;
+}
+
+.state-disp {
+  padding: 1% 0;
+  font-weight: bold;
+  border: 0.2rem solid #000000;
+}
+
+.order-state-cont {
+  width: 100%;
+  text-align: center;
+}
+
+.action-date,
+.order-manage-state {
+  margin: 5% auto;
+  padding: 2% 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.order-manage-state option {
+  cursor: pointer;
+}
+
+.order-edit-btn-area {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#state-btn {
+  margin: auto;
+}
+
+#delete-order-btn {
+  margin: 5% auto 0;
+}
+
+/*===[order_result.php]===*/
+.order-result-price-outer {
+  display: flex;
+  align-items: center;
+}
+
+.order-result-price {
+  font-size: 1.8rem;
+}
+
+.order-result-price-tax {
+  padding-left: 0.5%;
+  font-size: 1rem;
+}
+
+.order-result-state-outer {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.order-result-state-date {
+  padding: 5%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.order-result-state {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#order-result-return-outer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+}
+
+/*===[order_thank.php]===*/
+#thank-form {
+  height: 50%;
+}
+
+.thank-err {
+  padding: 1% 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#order-nav {
+  margin: 3% auto;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  animation: nav_flash 1.5s linear infinite;
+}
+@keyframes nav_flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#thank-return-btn-outer {
+  margin: auto;
+  width: 40%;
+}

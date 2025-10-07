@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/*
+fiction_shop
+main_middle
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*==[コンテンツ]==*/
+.contents {
+  margin-bottom: 10%;
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.products-box,
+.sale-box {
+  display: block;
+  width: 35%;
+}
+
+/*==[NEW_SALE共通]==*/
+#new-title-outer,
+#sale-title-outer {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-10%);
+  height: 100%;
+  width: 10%;
+}
+#new-title-outer.contents-title-fadein,
+#sale-title-outer.contents-title-fadein {
+  transition: 1s ease-out;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+#new-title,
+#sale-title {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.head-word {
+  margin-right: -5%;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.foot-word {
+  letter-spacing: 0.1rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.white-line-n,
+.white-line-s {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  content: "";
+  margin: 5% auto;
+  height: 0.2rem;
+  width: 60%;
+  background-color: #767171;
+  transition: 0.5s ease-in 0.2s;
+}
+.white-line-n.white-line-fadein,
+.white-line-s.white-line-fadein {
+  width: calc(100% + 500%);
+}
+
+.back-line-n,
+.back-line-s {
+  position: absolute;
+  opacity: 0.2;
+  bottom: -450%;
+  left: 0%;
+  height: 120%;
+  width: 0%;
+  background-color: #767171;
+  transition: 1s ease-in 0.2s;
+}
+.back-line-n.back-line-fadein,
+.back-line-s.back-line-fadein {
+  width: calc(100% + 700%);
+}
+
+#new-products-area,
+#sale-products-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 10% auto;
+  height: 100%;
+  width: 100%;
+}
+
+.new-img-box-1,
+.new-img-box-2,
+.new-img-box-3,
+.sale-img-box-1,
+.sale-img-box-2,
+.sale-img-box-3 {
+  position: relative;
+  opacity: 0;
+  top: 0%;
+  left: 0%;
+  transform: rotateY(180deg) translateY(30%);
+  display: inline-block;
+  margin: 0% auto;
+  height: 15rem;
+  width: 15rem;
+}
+
+.new-txt-box-1,
+.new-txt-box-2,
+.new-txt-box-3,
+.sale-txt-box-1,
+.sale-txt-box-2,
+.sale-txt-box-3 {
+  opacity: 0;
+  transform: translateY(30%);
+  margin: auto;
+  height: 20%;
+  width: 80%;
+  text-align: center;
+}
+
+.new-img,
+.sale-img {
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgb(218, 217, 217, 0.6);
+}
+
+.new-name-area,
+.sale-name-area {
+  margin: 0% auto 5%;
+  height: 15%;
+  width: 80%;
+}
+
+.new-name,
+.sale-name {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.new-txt,
+.sale-txt {
+  display: block;
+  margin: 0% auto;
+  padding: 3%;
+  min-height: 100%;
+  width: 90%;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
+}
+
+.new-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  height: 10%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff5601;
+}
+
+.new-tax,
+.sale-tax {
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ff5601;
+}
+
+#new-more-btn-area,
+#sale-more-btn-area {
+  margin: 20% auto;
+  width: 100%;
+  text-align: center;
+}
+
+/*=[NEW]=*/
+/*new-img-box fadein*/
+.new-img-box-1.img1-fadein {
+  transition: 1s ease;
+  opacity: 1;
+  transform: rotateX(0deg) translateY(0%);
+}
+.new-img-box-2.img2-fadein {
+  transition: 1s ease 0.5s;
+  opacity: 1;
+  top: -20%;
+  transform: rotateX(0deg) translateY(0%);
+}
+.new-img-box-3.img3-fadein {
+  transition: 1s ease 1s;
+  opacity: 1;
+  top: -20%;
+  transform: rotateX(0deg) translateY(0%);
+}
+
+/*new-txt-box fadein*/
+.new-txt-box-1.pt-box-1 {
+  transition: 1s ease 0.5s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+.new-txt-box-2.pt-box-2 {
+  transition: 1s ease 1s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+.new-txt-box-3.pt-box-3 {
+  transition: 1s ease 1.5s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/*=[SALE]=*/
+/*sale-img-box fadein*/
+.sale-img-box-1.img1-fadein {
+  transition: 1s ease;
+  opacity: 1;
+  transform: rotateX(0deg) translateY(0%);
+}
+.sale-img-box-2.img2-fadein {
+  transition: 1s ease 0.5s;
+  opacity: 1;
+  top: -20%;
+  transform: rotateX(0deg) translateY(0%);
+}
+.sale-img-box-3.img3-fadein {
+  transition: 1s ease 1s;
+  opacity: 1;
+  top: -20%;
+  transform: rotateX(0deg) translateY(0%);
+}
+
+/*sale-txt-box fadein*/
+.sale-txt-box-1.pt-box-1 {
+  transition: 1s ease 0.5s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+.sale-txt-box-2.pt-box-2 {
+  transition: 1s ease 1s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+.sale-txt-box-3.pt-box-3 {
+  transition: 1s ease 1.5s;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.sale-price-outer {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.sale-price-before {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-weight: bold;
+  color: #ff5601;
+}
+
+.sale-price-before::after {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  content: "";
+  height: 5%;
+  width: 80%;
+  background-color: #ffffff;
+}
+
+.sale-arrow {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.sale-price-after {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.sale-after-tax {
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+/*==[配送について]==*/
+#delivery-container {
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  border-top: dashed 0.1rem #ffffff;
+}
+
+#delivery-outer {
+  margin: 0% auto;
+  padding: 20% 0% 30%;
+  width: 90%;
+  counter-reset: number 0;
+  border-top: 0.2rem dotted #000000;
+  border-bottom: 0.2rem dotted #000000;
+}
+
+.delivery-inner {
+  padding: 5% 0%;
+  color: #ffffff;
+}
+
+.delivery-heading {
+  display: flex;
+  align-items: center;
+  padding-left: 0.8%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #bdbdbd;
+  color: #ffffff;
+}
+.delivery-heading::before {
+  counter-increment: number 1;
+  content: counter(number) ".";
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.delivery-content {
+  margin: 1% 0%;
+  padding-left: 0.8%;
+  color: #ffffff;
+}
+
+.delivery-list li {
+  line-height: 2;
+}
+
+.delivery-caution {
+  padding: 0.5% 0%;
+  line-height: 2;
+  font-weight: bold;
+  color: #ff0000;
+}

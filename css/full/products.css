@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/*
+fiction_shop
+products
+=====[rgb]=======
+ロゴ グリーン
+rgb(0, 194, 87);
+=================
+*/
+
+/*===[all.php]===*/
+#all-list {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+#all-list-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+
+.item-form {
+  position: relative;
+  margin: 3%;
+  padding: 1%;
+  width: 25%;
+  background-color: #eeeeee;
+}
+
+.item-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.item-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.item-lead {
+  margin: auto;
+  width: 100%;
+}
+
+.item-name {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-left: 2%;
+  font-weight: bold;
+  border-bottom: 0.05rem solid #494949;
+}
+
+.item-txt {
+  margin: 0 auto;
+  max-height: 20%;
+  padding: 0 3%;
+  text-align: left;
+}
+
+.item-foot {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.stock-nav {
+  padding: 0 5%;
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 3% 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.item-price-child {
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+  font-weight: bold;
+}
+
+.price-tax {
+  font-size: 1rem;
+}
+
+.amount-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0;
+}
+
+.spinner-plus,
+.spinner-minus {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  padding: 1% 0;
+  width: 15%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #828282;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*+- hover*/
+.spinner-plus:hover,
+.spinner-minus:hover {
+  background-color: #00c257;
+}
+
+.amount {
+  margin: 0 1.5%;
+  padding: 2%;
+  width: 20%;
+  text-align: center;
+  font-size: 1.8rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.amount-nav-outer {
+  padding: 2%;
+  text-align: center;
+}
+
+.err-amount {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.cart-btn-outer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.in-cart {
+  display: inline;
+  margin-bottom: 5%;
+  padding: 2% 0;
+  width: 65%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 0.3rem double #000000;
+  border-radius: 0.3rem;
+  background-color: #00c257;
+  cursor: pointer;
+}
+/*カートに入れる hover*/
+.in-cart:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.sold-out {
+  margin: 19% 0 7%;
+  padding: 1% 0;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.soldout-wrapper {
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*================
+[item_edit.php]
+[item_manage.php]
+[item_signup.php]
+共通
+================*/
+.edit-container {
+  margin: auto;
+  padding: 2%;
+  height: 80vh;
+  width: 90%;
+}
+
+/*scroll outer*/
+.edit-form-outer-scroll {
+  position: absolute;
+  left: 10%;
+  overflow-y: scroll;
+  margin: auto;
+  height: 70vh;
+  width: 80%;
+  border: 0.2rem solid #ffffff;
+  background-color: #646464;
+}
+
+.edit-form-outer {
+  position: relative;
+  left: 0;
+  margin: auto;
+  width: 80%;
+}
+
+.edit-form {
+  display: flex;
+  align-items: center;
+  margin: 5% auto 0;
+  padding: 2%;
+  width: 80%;
+  text-align: left;
+  border-radius: 0.3rem;
+  background-color: #eeeeee;
+}
+
+.edit-img-outer {
+  position: relative;
+  margin: auto;
+  height: 15rem;
+  width: 15rem;
+  border: solid 0.2rem #000000;
+}
+
+.img-name {
+  position: absolute;
+  left: 10%;
+  bottom: -30%;
+  width: 80%;
+  text-align: center;
+}
+
+.edit-img {
+  height: 100%;
+  background-size: cover;
+}
+
+.edit-item-lead-outer {
+  display: block;
+  padding: 0.5%;
+  width: 60%;
+}
+
+.edit-item-lead {
+  display: flex;
+  padding: 1% 0;
+  width: 100%;
+}
+
+.edit-item-list {
+  width: 20%;
+  font-weight: bold;
+}
+
+.edit-item-item {
+  width: 100%;
+}
+
+.item-edit-btn-outer {
+  width: 40%;
+}
+
+.item-edit-btn {
+  display: block;
+  margin: 10% auto;
+  width: 80%;
+  text-align: center;
+}
+
+/*===[item_manage.php]===*/
+.input-edit {
+  padding: 1% 0.5%;
+  text-indent: 1rem;
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+.input-edit-txt {
+  padding: 1% 2%;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+#item-signup-btn-outer {
+  padding-top: 5%;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+/*===[item_signup.php]===*/
+#signup-img-box {
+  margin: auto;
+  height: 14.6rem;
+  width: 14.6rem;
+}
+
+#signup-btn-submit,
+#signup-btn-return {
+  margin: 20% auto;
+}
+
+.edit-signup-btn-outer {
+  margin-top: 10%;
+  width: 20%;
+}
+
+/*===[item_edit.php]===*/
+.edit-result-lead-outer {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+#safe-result {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#err-result {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+#edit-return-btn-outer {
+  margin: auto;
+  padding: 5% 0;
+  text-align: center;
+  width: 40%;
+}
